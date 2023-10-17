@@ -29,7 +29,7 @@
             <td><?php echo $x['alamat'] ?></td>
             <td>
                 <a href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
-                <a href="hapus_mhs.php">Hapus</a>
+                <a href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">Hapus</a>
             </td>
         </tr>
         <?php
