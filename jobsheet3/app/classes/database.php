@@ -38,5 +38,34 @@
         function hapus ($id) {
             mysqli_query($this->koneksi, "delete from mahasiswa where id='$id'");
         }
+
+        //DOSEN
+        function tampil_dosen (){
+            $data = mysqli_query($this->koneksi, "select *from dosen");
+            while ($d = mysqli_fetch_array($data)) {
+                $this->hasil[]=$d;
+            }
+            return $this->hasil;
+        }
+
+        function tambah_dosen ($nip, $nama, $alamat) {
+            mysqli_query($this->koneksi,"insert into dosen(nip, nama, alamat) values('$nip','$nama','$alamat')");
+        }
+
+        function edit_dosen ($id) {
+            $data = mysqli_query($this->koneksi, "select *from dosen where id ='$id'");
+            while ($d=mysqli_fetch_array ($data)) {
+                $hasil[]=$d;
+            }
+            return $hasil;
+        }
+
+        function update_dosen ($id, $nip, $nama, $alamat){
+            mysqli_query($this->koneksi, "update dosen set nip='$nip', nama='$nama', alamat='$alamat' where id='$id'");
+        }
+
+        function hapus_dosen ($id) {
+            mysqli_query($this->koneksi, "delete from dosen where id='$id'");
+        }
     }
 ?>
