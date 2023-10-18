@@ -26,7 +26,7 @@
                 $prima = false;
             }
             else {
-                for ($i=2; $i <= sqrt($a) ; $i++) { 
+                for ($i=2; $i < $a ; $i++) { 
                     if ($a % $i == 0) {
                         $prima = false;
                         break;
@@ -39,7 +39,7 @@
 
             $a++;
         } 
-        while ($a <= 20);
+        while ($a < 20);
     ?>
 </body>
 </html>
