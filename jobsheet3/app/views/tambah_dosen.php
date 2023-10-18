@@ -23,8 +23,13 @@
   <table>
      <tr>
         <td></td>
-        <td><input class="btn btn-success mb-3 mt-2" type="submit" value="Simpan"></td>
+        <td><input class="btn btn-success mb-3 mt-2" type="submit" value="Simpan" onclick="showAlert()"></td>
     </tr>
   </table>
 </form>
+<script>
+    function showAlert() {
+      alert ("Data Dosen berhasil ditambahkan")
+    }
+  </script>
 </div>

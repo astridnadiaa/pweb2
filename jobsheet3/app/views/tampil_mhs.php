@@ -21,20 +21,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="tampil_mhs.php">Mahasiswa</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="tampil_dosen.php">Dosen</a>
         </li>
-
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
     </div>
   </div>
 </nav>
@@ -42,6 +35,7 @@
 <div class="px-5">
 <h3>Data Mahasiswa</h3>
 <a class="btn btn-primary mb-3 mt-2" href="tambah_mhs.php">Tambah Mahasiswa</a>
+
 <table class="table table-bordered">
     <tr>
         <th>No</th>
