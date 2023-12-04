@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /app/
+RewriteBase /pweb2/jobsheet5/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -7,4 +7,11 @@ RewriteRule ^home/?$ index.php?page=$1 [L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond ^mahasiswa/?$ views/mahasiswa/index.php=$1 [L]
+RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php?page=$1 [L]
+RewriteRule ^dosen/?$ views/dosen/index.php?page=$1 [L]
+RewriteRule ^tambah_mahasiswa/?$ views/mahasiswa/tambah.php?page=$1 [L]
+RewriteRule ^edit_mahasiswa/?$ views/mahasiswa/edit.php?page=$1 [L]
+RewriteRule ^hapus_mahasiswa/?$ views/mahasiswa/hapus.php?page=$1 [L]
+RewriteRule ^tambah_dosen/?$ views/dosen/tambah.php?page=$1 [L]
+RewriteRule ^edit_dosen/?$ views/dosen/edit.php?page=$1 [L]
+RewriteRule ^hapus_dosen/?$ views/dosen/hapus.php?page=$1 [L]

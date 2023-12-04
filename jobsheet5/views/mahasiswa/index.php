@@ -14,7 +14,7 @@
 
 <div class="px-5">
 <h3>Data Mahasiswa</h3>
-<a class="btn btn-primary mb-3 mt-2" href="tambah.php">Tambah Mahasiswa</a>
+<a class="btn btn-primary mb-3 mt-2" href="tambah_mahasiswa">Tambah Mahasiswa</a>
 
 <table class="table table-bordered">
     <tr>
@@ -43,8 +43,8 @@
             <td><?php echo $x['agama'] ?></td>
             <td><?php echo $x['alamat'] ?></td>
             <td>
-                <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?>">Edit</a>
-                <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?>"
+                <a class="btn btn-warning" href="edit_mahasiswa?id=<?php echo $x['id']; ?>">Edit</a>
+                <a class="btn btn-danger" href="hapus_mahasiswa?id=<?php echo $x['id']; ?>"
                 onclick="return confrim('Apakah anda yakin akan menghapus data??')">Hapus</a>
             </td>
         </tr>
