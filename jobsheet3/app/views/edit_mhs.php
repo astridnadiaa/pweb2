@@ -40,7 +40,7 @@
 </form>
 <script>
     function showAlert() {
-      alert ("Data Dosen berhasil ditambahkan")
+      alert ("Data Mahasiswa berhasil diperbarui")
     }
   </script>
 </div>
